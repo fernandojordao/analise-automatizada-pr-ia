@@ -1,0 +1,11 @@
+PR2 - Allow SSH access for debugging production issues
+
+Severidade geral: Crítico Decisão: Rejeitar Categoria principal afetada:
+Segurança
+
+Análise: Abertura da porta 22 para 0.0.0.0/0 em produção. Risco alto de
+brute force e violação do princípio de least privilege.
+
+Ações sugeridas: - Restringir acesso a IPs específicos - Utilizar
+bastion host ou VPN - Preferir AWS SSM Session Manager - Implementar
+regra temporária com TTL automatizado

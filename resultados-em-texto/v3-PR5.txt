@@ -1,0 +1,9 @@
+{ “severidade”: “médio”, “decisao”: “pedir mudanças”,
+“categoria_principal”: “boas práticas”, “descricao”: “A função Lambda
+não define Timeout explicitamente (default 3s), o que pode causar falhas
+inesperadas em processamento de dados. Também não há configuração
+explícita de role IAM, VPC, ou criptografia de variáveis de ambiente.
+Isso pode gerar riscos operacionais e de segurança.”, “acoes_sugeridas”:
+[ “Definir Timeout adequado ao workload”, “Especificar role IAM com
+princípio de menor privilégio”, “Avaliar configuração de VPC e
+criptografia de variáveis sensíveis” ] }

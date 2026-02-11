@@ -1,0 +1,10 @@
+{ “severidade”: “alto”, “decisao”: “pedir mudanças”,
+“categoria_principal”: “segurança”, “descricao”: “O bucket S3 para logs
+de produção foi criado sem configurações explícitas de segurança como
+versionamento, criptografia (SSE), bloqueio de acesso público (block
+public access), políticas de retenção ou controle de acesso (IAM
+policies). Para ambiente produtivo, isso representa risco de vazamento
+de dados e não conformidade com boas práticas de segurança e
+compliance.”, “acoes_sugeridas”: [ “Habilitar server-side encryption
+(SSE-S3 ou SSE-KMS)”, “Ativar Block Public Access no bucket”, “Habilitar
+versionamento e definir lifecycle policy para retenção de logs” ] }

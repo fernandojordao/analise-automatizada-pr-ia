@@ -1,0 +1,12 @@
+Severidade: crítico Decisão: rejeitar Categoria principal: segurança
+
+Descrição: A regra de security group permite SSH (porta 22) a partir de
+0.0.0.0/0, expondo instâncias de produção à internet pública. Isso
+representa risco direto de brute force, exploração de vulnerabilidades e
+comprometimento total do ambiente. Viola princípios de least privilege e
+boas práticas de hardening.
+
+Ações sugeridas: - Restringir cidr_blocks a IPs corporativos ou VPN. -
+Preferir acesso via bastion host controlado ou AWS SSM Session
+Manager. - Implementar monitoramento e alertas para tentativas de acesso
+SSH.

@@ -1,0 +1,12 @@
+PR5 - Deploy new data processing Lambda function
+
+Severidade geral: Médio Decisão: Pedir mudanças Categoria principal
+afetada: Boas práticas
+
+Análise: - Timeout não definido (default 3s) - MemorySize alto sem
+justificativa - DB_HOST hardcoded - Ausência de DLQ, IAM explícito e
+retenção de logs
+
+Ações sugeridas: - Definir Timeout explícito - Justificar ou ajustar
+MemorySize - Externalizar DB_HOST (SSM/Secrets Manager) - Definir role
+com least privilege - Adicionar DLQ - Definir retention de logs

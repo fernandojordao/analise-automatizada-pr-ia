@@ -1,0 +1,13 @@
+PR1 - Adding S3 bucket for application logs storage
+
+Severidade geral: Médio Decisão: Pedir mudanças Categoria principal
+afetada: Segurança
+
+Análise: O bucket S3 para logs de produção não possui configurações
+essenciais de segurança como: - Block public access - Server-side
+encryption (SSE) - Versionamento - Lifecycle policy - Bucket policy
+restritiva
+
+Ações sugeridas: - Ativar aws_s3_bucket_public_access_block - Habilitar
+server_side_encryption_configuration - Habilitar versionamento -
+Adicionar lifecycle policy (ex: Glacier) - Tornar nome parametrizável

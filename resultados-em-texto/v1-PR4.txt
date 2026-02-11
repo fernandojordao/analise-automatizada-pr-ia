@@ -1,0 +1,10 @@
+PR4 - Add cost tracking tags to EC2 instances
+
+Severidade geral: Baixo Decisão: Aprovar Categoria principal afetada:
+Compliance
+
+Análise: Adição de tags CostCenter e Owner. Melhora governança,
+rastreabilidade e controle de custos.
+
+Ações sugeridas: - Garantir política de tags obrigatórias - Validar
+padronização de nomenclatura

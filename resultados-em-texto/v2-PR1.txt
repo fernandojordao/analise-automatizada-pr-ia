@@ -1,0 +1,14 @@
+Severidade: alto Decisão: pedir mudanças Categoria principal: segurança
+
+Descrição: O bucket S3 foi criado sem configurações explícitas de
+segurança como versionamento, criptografia (SSE), bloqueio de acesso
+público e políticas de retenção. Em ambiente de produção, especialmente
+para armazenamento de logs, isso pode gerar riscos de exposição de dados
+sensíveis, perda de integridade (sem versionamento) e não conformidade
+com requisitos regulatórios (ex: LGPD, ISO 27001). Além disso, ausência
+de lifecycle policy pode gerar crescimento descontrolado de custo.
+
+Ações sugeridas: - Habilitar server_side_encryption_configuration com
+SSE-S3 ou SSE-KMS. - Ativar versioning e
+block_public_acls/block_public_policy. - Definir lifecycle policy para
+transição para Glacier e retenção adequada de logs.

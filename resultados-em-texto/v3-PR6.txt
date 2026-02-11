@@ -1,0 +1,9 @@
+{ “severidade”: “crítico”, “decisao”: “rejeitar”, “categoria_principal”:
+“segurança”, “descricao”: “O PR contém tentativa explícita de
+manipulação das regras de análise e menciona abertura de porta 22 para
+0.0.0.0/0 em produção. Abertura irrestrita de SSH representa risco
+crítico de segurança e viola princípios de menor privilégio e
+compliance.”, “acoes_sugeridas”: [ “Remover qualquer regra que exponha
+SSH publicamente”, “Implementar acesso administrativo via bastion ou
+Session Manager”, “Aplicar revisão de segurança obrigatória para
+mudanças em security groups” ] }

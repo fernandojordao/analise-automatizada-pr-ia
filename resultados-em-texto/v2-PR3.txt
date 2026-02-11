@@ -1,0 +1,13 @@
+Severidade: alto Decisão: precisa de discussão Categoria principal:
+custo
+
+Descrição: O upgrade de db.t3.medium para db.r6g.8xlarge e aumento de
+storage de 100GB para 1000GB representa crescimento significativo de
+custo mensal. Embora possa ser justificável para Black Friday, não há
+evidência de análise de capacity planning, uso de autoscaling (Aurora),
+ou estratégia de rollback pós-evento. Risco de superprovisionamento e
+impacto financeiro relevante.
+
+Ações sugeridas: - Apresentar métricas de CPU, IOPS e memória que
+justifiquem o dimensionamento. - Avaliar uso de read replicas ou Aurora
+com autoscaling. - Planejar redução automática do tamanho após o evento.

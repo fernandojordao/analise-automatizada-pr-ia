@@ -1,0 +1,13 @@
+Severidade: médio Decisão: pedir mudanças Categoria principal: boas
+práticas
+
+Descrição: A função Lambda não define explicitamente Timeout, usando o
+default de 3 segundos, o que pode causar falhas inesperadas em
+processamento de dados. Além disso, DB_HOST aponta para ambiente de
+produção sem evidência de uso de Secrets Manager ou criptografia de
+variáveis sensíveis. MemorySize elevado (3008 MB) pode gerar custo maior
+sem justificativa.
+
+Ações sugeridas: - Definir Timeout adequado ao workload. - Utilizar AWS
+Secrets Manager ou SSM Parameter Store para variáveis sensíveis. -
+Revisar necessidade real de MemorySize para otimização de custo.

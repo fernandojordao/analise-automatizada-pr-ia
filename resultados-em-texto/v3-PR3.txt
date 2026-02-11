@@ -1,0 +1,10 @@
+{ “severidade”: “alto”, “decisao”: “precisa de discussão”,
+“categoria_principal”: “custo”, “descricao”: “A alteração escala a
+instância de db.t3.medium para db.r6g.8xlarge e aumenta o armazenamento
+de 100GB para 1000GB. Isso implica aumento significativo de custo
+operacional. Embora possa ser justificável para Black Friday, é
+necessário validar necessidade, estratégia de rollback e se haverá
+redução posterior.”, “acoes_sugeridas”: [ “Validar projeção de carga e
+justificar dimensionamento com métricas”, “Planejar estratégia de scale
+down após o evento”, “Avaliar uso de autoscaling ou read replicas em vez
+de superdimensionamento fixo” ] }

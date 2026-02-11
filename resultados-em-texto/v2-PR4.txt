@@ -1,0 +1,11 @@
+Severidade: baixo Decisão: aprovar Categoria principal: boas práticas
+
+Descrição: A adição de tags de CostCenter e Owner melhora governança,
+rastreabilidade de custos e accountability. Está alinhado com práticas
+de FinOps e compliance organizacional. Não há impacto negativo de
+segurança ou custo.
+
+Ações sugeridas: - Padronizar uso de tags obrigatórias via policy (ex:
+AWS Tag Policies). - Garantir que todos os recursos utilizem o mesmo
+padrão de tagging. - Validar enforcement via CI/CD (ex: terraform
+validate + policy as code).

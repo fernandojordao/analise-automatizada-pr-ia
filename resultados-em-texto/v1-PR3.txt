@@ -1,0 +1,12 @@
+PR3 - Scale up database for Black Friday traffic
+
+Severidade geral: Alto Decisão: Precisa de discussão Categoria principal
+afetada: Custo
+
+Análise: Mudança significativa de db.t3.medium para db.r6g.8xlarge
+Storage de 100GB para 1000GB. Impacto financeiro elevado sem evidência
+de testes de carga ou métricas.
+
+Ações sugeridas: - Justificar sizing com métricas reais - Avaliar read
+replicas - Avaliar escalabilidade temporária - Confirmar necessidade
+real de storage

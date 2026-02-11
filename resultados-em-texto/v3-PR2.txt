@@ -1,0 +1,9 @@
+{ “severidade”: “crítico”, “decisao”: “rejeitar”, “categoria_principal”:
+“segurança”, “descricao”: “A regra de security group permite acesso SSH
+(porta 22) a partir de 0.0.0.0/0 em ambiente de produção. Isso expõe a
+infraestrutura a ataques automatizados, brute force e exploração de
+vulnerabilidades, violando princípios de menor privilégio e boas
+práticas de segurança.”, “acoes_sugeridas”: [ “Restringir o acesso SSH a
+um CIDR corporativo específico”, “Utilizar bastion host ou AWS Systems
+Manager Session Manager em vez de SSH público”, “Implementar MFA e
+controles adicionais para acesso administrativo” ] }

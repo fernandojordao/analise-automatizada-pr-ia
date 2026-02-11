@@ -1,0 +1,7 @@
+{ “severidade”: “baixo”, “decisao”: “aprovar”, “categoria_principal”:
+“boas práticas”, “descricao”: “Adição de tags de CostCenter e Owner
+melhora governança, rastreabilidade de custos e compliance financeiro.
+Está alinhado com boas práticas de FinOps e organização de recursos.”,
+“acoes_sugeridas”: [ “Padronizar tags obrigatórias via policy (ex: AWS
+Tag Policies ou SCP)”, “Garantir consistência das tags em todos os
+recursos”, “Integrar tags com ferramenta de cost allocation” ] }
